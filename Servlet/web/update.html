@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!-- 网页使用的语言 -->
+<html lang="zh-CN">
+<head>
+    <base href="<%=basePath%>"/>
+    <!-- 指定字符集 -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>修改联系人</title>
+
+<!--    <link href="css/bootstrap.min.css" rel="stylesheet">-->
+<!--    <script src="js/jquery-2.1.0.min.js"></script>-->
+<!--    <script src="js/bootstrap.min.js"></script>-->
+
+</head>
+<body>
+<div class="container" style="width: 400px;">
+    <h3 style="text-align: center;">修改联系人</h3>
+    <form action="/Servlet/updateServlet" method="post">
+            <label for="name">请输入要修改的联系人姓名：</label>
+            <input type="text" class="form-control" id="name" name="name"  placeholder="请输入要修改的联系人姓名" />
+
+            <label for="newName">请输入新联系人姓名：</label>
+            <input type="text" class="form-control" id="newName" name="newName"   placeholder="请输入新联系人姓名" />
+        <br>
+
+        <label for="phone">请输入电话</label>
+        <input type="text" class="form-control" id="phone" name="phone"   placeholder="请输入电话" />
+
+
+        <div class="form-group" style="text-align: center">
+            <input class="btn btn-primary" type="submit" value="提交" />
+            <input class="btn btn-default" type="reset" value="重置" />
+
+        </div>
+    </form>
+</div>
+</body>
+</html>
